@@ -1,6 +1,6 @@
 {
   "name": "empire-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "files": [
     "dist",
@@ -8,10 +8,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "URL_OF_YOUR_REPOSITORY"
+    "url": "https://github.com/davidchanho/empire-components"
   },
   "dependencies": {
     "@storybook/addon-storyshots": "^6.3.4",
+    "@tailwindcss/forms": "^0.3.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -33,7 +34,9 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [

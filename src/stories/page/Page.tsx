@@ -1,13 +1,8 @@
 import React from "react";
+import { PageProps } from "../../types/types";
 import { Header } from "../header/Header";
 import "./page.css";
 
-interface PageProps {
-  user?: {};
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
-}
 
 export const Page = ({
   user,
