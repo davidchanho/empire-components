@@ -1,5 +1,5 @@
 import React from "react";
-import { PageProps } from "../../types/types";
+import { PageProps } from "../../typings";
 import { Header } from "../header/Header";
 import "./page.css";
 

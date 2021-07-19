@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderProps } from "../../types/types";
+import { HeaderProps } from "../../typings";
 import { Button } from "../button/Button";
 import "./header.css";
 
